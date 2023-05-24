@@ -1,0 +1,64 @@
+@font-face {
+    font-family: gameplay;
+    src: url(font/Gameplay.ttf);
+}
+
+@font-face {
+    font-family: dark-mage;
+    src: url(font/Dark-Mage.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0rem;
+    padding: 0rem;
+}
+:root{
+    --cor1: #2C10B0;
+    --cor2: #FC8123;
+    --cor3: #974608;
+    --cor4: #340AFC;
+    --cor5: #3FFC3D;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--cor1);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-family: 'gameplay', 'dark-mage', fantasy;
+}
+
+header, main{
+    padding: 3rem;
+    text-align: center;
+}
+
+header h1{
+    font-size: 5rem;
+    color: var(--cor5);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main div{
+    margin: 0rem 4rem 0rem 4rem;
+}
+div.div-img{
+    width: 258px;
+    height: 258px;
+    margin: 1rem 0rem 1rem 0rem;
+}
+#jogador1{
+    color: var(--cor2);
+}
+#jogador2{
+    color: var(--cor3);
+}
+
+.empate{
+    color: yellow;
+}
